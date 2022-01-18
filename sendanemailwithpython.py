@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
 import smtplib
 
 sender = "sender@gmail.com"
@@ -17,4 +11,3 @@ smtp_server.login(sender, password)
 message = "Subject: {}\n\n{}".format(subject, text)
 smtp_server.sendmail(sender, recipient, message)
 smtp_server.close()
-
